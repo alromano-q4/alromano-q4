@@ -2,7 +2,9 @@
 ```bash
 $ npx vip3rousmango
 ```
-I'm Al. I'm a self-taught web developer with a nack for learning new things and breaking stuff. I enjoy being creative but find expressing it artistically, difficult. But, once I found coding, I was able to express that creativity that no paint-brush or paint-mouse ever quite could do for me and I've never looked back since.
+I'm Al. I'm a self-taught "Web Stack" Node Developer with a focus on accessibility first and a knack for web analytics and data visualization dashboards; a firm believer in "user experience first" and HTML First Prototyping approaches when applying best practice standards for web development.
+
+Starting out as a PHP (LAMP) developer (you guessed it, WordPress...) I've recently taken an interest in Information Dashboard design and data visualization using JavaScript as well as becoming more proficient in using Node.js both for DX CLI tooling and for building applications (JAM stack).
 
 :notes: Started with the LAMP-stack, now I'm all about that JAM-stack. :notes:
 
