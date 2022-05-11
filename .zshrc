@@ -1,3 +1,10 @@
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -8,7 +15,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="shades-of-purple"
+ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -26,7 +33,7 @@ ZSH_THEME="shades-of-purple"
 # Uncomment one of the following lines to change the auto-update behavior
 # zstyle ':omz:update' mode disabled  # disable automatic updates
 # zstyle ':omz:update' mode auto      # update automatically without asking
-# zstyle ':omz:update' mode reminder  # just remind me to update when it's time
+zstyle ':omz:update' mode reminder  # just remind me to update when it's time
 
 # Uncomment the following line to change how often to auto-update (in days).
 # zstyle ':omz:update' frequency 13
@@ -70,9 +77,12 @@ ZSH_THEME="shades-of-purple"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git node npm vscode bower brew macos extract z zsh-autosuggestions zsh-syntax-highlighting copypath copyfile web-search urltools dirhistory emoji history)
+plugins=(git node npm vscode bower brew macos extract z zsh-autosuggestions zsh-syntax-highlighting copypath copyfile web-search urltools dirhistory emoji history zsh-completions
+)
 
+fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
 source $ZSH/oh-my-zsh.sh
+eval "$(fnm env --use-on-cd)"
 
 # User configuration
 
@@ -97,15 +107,91 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
+alias zshconfig="mate ~/.zshrc"
+alias ohmyzsh="mate ~/.oh-my-zsh"
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
-alias ils='logo-ls'
-alias ila='logo-ls -A'
-alias ill='logo-ls -al'
 # equivalents with Git Status on by Default
-alias ilsg='logo-ls -D'
-alias ilag='logo-ls -AD'
-alias illg='logo-ls -alD'
+alias ls='logo-ls -D'
+alias la='logo-ls -AD'
+alias ll='logo-ls -alD'
+
+# NAVIGATION
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+
+# COMMON DIRECTORIES
+alias dl="cd ~/Downloads"
+alias dt="cd ~/Desktop"
+alias dc="cd ~/Documents"
+alias p="cd ~/Documents/projects"
+alias home="cd ~"
+
+# GIT
+alias g="git"
+alias gs="git status"
+alias gd="git diff"
+alias gb="git branch"
+alias gm="git checkout master"
+
+# SHOW/HIDE HIDDEN FILES
+alias showhidden="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
+alias hidehidden="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
+
+# SHOW/HIDE DESKTOP ICONS
+alias hidedesktop="defaults write com.apple.finder CreateDesktop -bool false && killall Finder"
+alias showdesktop="defaults write com.apple.finder CreateDesktop -bool true && killall Finder"
+
+# EASIER DOTFILE EDITING
+alias aliases="nano ~/.aliases && . ~/.aliases"
+alias bashprofile="nano ~/.bash_profile && . ~/.bash_profile"
+alias zshprofile="nano ~/.zshrc"
+
+# Git Commit, Add all and Push — in one step.
+function gcap() {
+    git add . && git commit -m "$*" && git push
+}
+
+# NEW.
+function gnew() {
+    gcap "📦 NEW: $@"
+}
+
+# IMPROVE.
+function gimp() {
+    gcap "👌 IMPROVE: $@"
+}
+
+# FIX.
+function gfix() {
+    gcap "🐛 FIX: $@"
+}
+
+# RELEASE.
+function grlz() {
+    gcap "🚀 RELEASE: $@"
+}
+
+# DOC.
+function gdoc() {
+    gcap "📖 DOC: $@"
+}
+
+# TEST.
+function gtst() {
+    gcap "🤖 TEST: $@"
+}
+
+# BREAKING CHANGE.
+function gbrk() {
+    gcap "‼️ BREAKING: $@"
+}
+
+autoload -U compinit; compinit
+export PATH=$HOME/bin:$PATH
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
