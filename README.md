@@ -46,8 +46,8 @@ Happy to collaborate on fellow open-source projects that align with providing th
 
 ### 📫 How to reach me: ...
 
-The fastest way is via the company Slack or by email, al.romano@q4inc.com
-
+The fastest way is to `@al` via the company Slack,
+or use [this link to book a 30min quick connect](https://meet.mayday.am/-N7W2uKKISDYWsymm5UQ/5142787a9111)!
 ### 😄 Pronouns: ...
 
 - He/Him/His
