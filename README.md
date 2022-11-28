@@ -1,7 +1,9 @@
 ## Hi there 👋 I’m @alromano-q4
+
 ```bash
-$ npx vip3rousmango
+npx vip3rousmango
 ```
+
 I'm a self-taught "Web Stack" Node Developer with a focus on accessibility first and a knack for web analytics and data visualization dashboards; a firm believer in "user experience first" and HTML First Prototyping approaches when applying best practice standards for web development.
 
 Starting out as a PHP (LAMP) developer (you guessed it, WordPress...) I've recently taken an interest in Information Dashboard design and data visualization using JavaScript as well as becoming more proficient in using Node.js both for DX CLI tooling and for building applications (JAM stack).
@@ -10,30 +12,30 @@ Starting out as a PHP (LAMP) developer (you guessed it, WordPress...) I've recen
 
 ## A little bit personal
 
-### 🔭 I’m currently working on ...
+### 🔭 I’m currently working on
 
 - **Ollie-UI** - a JavaScript starter-kit for rapidly scaffolding web pages and stuff.
 - **Faye** - My first Ghost Theme built upon the default, Casper.
 
 ### Work GitHub Stats
+
 ![Al's github stats](https://github-readme-stats.vercel.app/api?username=alromano-q4&hide=["issues"]&show_icons=true)
 
 ### Personal GitHub Stats
+
 ![Al's github stats](https://github-readme-stats.vercel.app/api?username=vip3rousmango&hide=["issues"]&show_icons=true)
 
-### 🌱 I’m currently learning ...
+### 🌱 I’m currently learning
 
 - Amazon Web Services
-- SUN-Stack (Svelte/Userbase/Netlify)
-- CSS /w Open-Props
-- Strapi
+- Dart / Flutter
 - Node.js CLI
 
-### 👯 I’m looking to collaborate on ...
+### 👯 I’m looking to collaborate on
 
 Happy to collaborate on fellow open-source projects that align with providing things for the greater-good.
 
-### 💬 Ask me about ...
+### 💬 Ask me about
 
 - Web Development
 - Coding Mixes for Focus
@@ -44,15 +46,16 @@ Happy to collaborate on fellow open-source projects that align with providing th
 - Check out my [/uses/](https://virtuallycreative.ca/uses/) page for my personal tech stack
 - [Virtually(Hash)](https://hash.virtuallycreative.ca) for my publications and thoughts
 
-### 📫 How to reach me: ...
+### 📫 How to reach me
 
 The fastest way is to `@al` via the company Slack,
 or use [this link to book a 30min quick connect](https://meet.mayday.am/-N7W2uKKISDYWsymm5UQ/5142787a9111)!
-### 😄 Pronouns: ...
+
+### 😄 Pronouns
 
 - He/Him/His
 
-### ⚡ Fun fact: ...
+### ⚡ Fun fact
 
 - Once had my cat (Allegretto) wake me up @ 5am by exploding a bag chili-flakes in my bed. It was a spicy morning.
 
