@@ -92,11 +92,11 @@ eval "$(fnm env --use-on-cd)"
 # export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
+ if [[ -n $SSH_CONNECTION ]]; then
+   export EDITOR='lvim'
+ else
+   export EDITOR='nvim'
+ fi
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -150,7 +150,7 @@ alias aliases="nano ~/.aliases && . ~/.aliases"
 alias bashprofile="nano ~/.bash_profile && . ~/.bash_profile"
 alias zshprofile="nano ~/.zshrc"
 
-# Git Commit, Add all and Push — in one step.
+# Git Commit, Add all and Push - in one step.
 function gcap() {
     git add . && git commit -m "$*" && git push
 }
@@ -195,3 +195,20 @@ export PATH=$HOME/bin:$PATH
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# bun completions
+[ -s "/Users/alexander/.bun/_bun" ] && source "/Users/alexander/.bun/_bun"
+
+# bun
+export BUN_INSTALL="/Users/alexander/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+export VOLTA_HOME="$HOME/.volta"
+export PATH="$VOLTA_HOME/bin:$PATH"
+
+# LunarVim
+alias nvim=lvim
+export LVIM_INSTALL="/Users/alexander/.local/"
+export PATH="$LVIM_INSTALL/bin:$PATH"
+
+# Flutter
+export PATH="$PATH:/Users/alexander/development/flutter/bin"
