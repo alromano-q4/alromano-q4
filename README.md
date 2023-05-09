@@ -27,9 +27,9 @@ Starting out as a PHP (LAMP) developer (you guessed it, WordPress...) I've recen
 
 ### 🌱 I’m currently learning
 
-- Amazon Web Services
-- Dart / Flutter
-- Node.js CLI
+- autoGPT, LLM, LangLang
+- Mocha, Chai, Karma
+- Node.js CLI Tooling
 
 ### 👯 I’m looking to collaborate on
 
@@ -38,10 +38,10 @@ Happy to collaborate on fellow open-source projects that align with providing th
 ### 💬 Ask me about
 
 - Web Development
-- Coding Mixes for Focus
-- Using Agile for Parenting
-- How to exit Vim
-- Best way to cook a steak
+- Spotify Coding Mixes for deep focus
+- Using Agile for Parenting 😅
+- How to exit neoVim
+- Best way to cook a steak (it's with a meat jazccui)
 - Why VS Code is my favourite IDE
 - Check out my [/uses/](https://virtuallycreative.ca/uses/) page for my personal tech stack
 - [Virtually(Hash)](https://hash.virtuallycreative.ca) for my publications and thoughts
@@ -49,7 +49,7 @@ Happy to collaborate on fellow open-source projects that align with providing th
 ### 📫 How to reach me
 
 The fastest way is to `@al` via the company Slack,
-or use [this link to book a 30min quick connect](https://meet.mayday.am/-N7W2uKKISDYWsymm5UQ/5142787a9111)!
+or use [this link to book a 30min quick connect](https://www.getclockwise.com/c/al-romano-q4inc-com/quick-meeting)!
 
 ### 😄 Pronouns
 
