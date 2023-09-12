@@ -14,8 +14,8 @@ Starting out as a PHP (LAMP) developer (you guessed it, WordPress...) I've recen
 
 ### 🔭 I’m currently working on
 
-- **Ollie-UI** - a JavaScript starter-kit for rapidly scaffolding web pages and stuff.
-- **Faye** - My first Ghost Theme built upon the default, Casper.
+- **B.A.E.** - a data-driven Business Action Engine for Activations.
+- **JIRA Integrations** - Getting data into and out of JIRA using various APIs for better visualizations for Activations.
 
 ### Work GitHub Stats
 
@@ -27,7 +27,7 @@ Starting out as a PHP (LAMP) developer (you guessed it, WordPress...) I've recen
 
 ### 🌱 I’m currently learning
 
-- autoGPT, LLM, LangLang
+- autoGPT, LLM
 - Mocha, Chai, Karma
 - Node.js CLI Tooling
 
